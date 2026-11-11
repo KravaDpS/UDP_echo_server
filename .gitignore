@@ -1,0 +1,67 @@
+# STM32CubeIDE и файлы сборки
+*.o
+*.d
+*.su
+*.elf
+*.map
+*.hex
+*.bin
+*.list
+Debug/
+Release/
+latex/
+*.launch
+.mxproject
+
+# Локальные настройки IDE
+*.code-workspace
+*.sublime-project
+*.sublime-workspace
+.vs/
+.settings/
+
+# Лог-файлы и кэши
+*.log
+*.cache
+*.bak
+*.tmp
+
+# Средства сборки
+build/
+out/
+*.makefile
+Makefile.user
+
+# Средства отладки
+*.gdb
+*.tui
+*.gdbinit
+
+# Документация, сгенерированная автоматически
+docs/html/
+docs/latex/
+
+# Временные файлы и резервные копии
+*~
+*.swp
+*.swo
+*.bak
+*.tmp
+
+# Специфичные для ОС файлы
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Папки с пользовательскими данными
+data/
+logs/
+config/
+
+# Исключения: файлы, которые должны быть в репозитории
+!.gitkeep
+!*.c
+!*.h
+!*.s
+!*.ld
+!*.md
