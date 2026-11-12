@@ -2,37 +2,23 @@
     "version": 3,
     "configurePresets": [
         {
-            "name": "default",
-            "hidden": true,
+            "name": "stm32-debug",
+            "displayName": "STM32 Debug Build",
             "generator": "Ninja",
-            "binaryDir": "${sourceDir}/build/${presetName}",
-		    "toolchainFile": "${sourceDir}/cmake/gcc-arm-none-eabi.cmake",
+            "binaryDir": "${sourceDir}/build",
+            "toolchainFile": "cmake/gcc-arm-none-eabi.cmake",
             "cacheVariables": {
-            }
-        },
-        {
-            "name": "Debug",
-            "inherits": "default",
-            "cacheVariables": {
-                "CMAKE_BUILD_TYPE": "Debug"
-            }
-        },
-        {
-            "name": "Release",
-            "inherits": "default",
-            "cacheVariables": {
-                "CMAKE_BUILD_TYPE": "Release"
+                "CMAKE_BUILD_TYPE": "Debug",
+                "CMAKE_EXPORT_COMPILE_COMMANDS": "ON"
             }
         }
     ],
     "buildPresets": [
         {
-            "name": "Debug",
-            "configurePreset": "Debug"
-        },
-        {
-            "name": "Release",
-            "configurePreset": "Release"
+            "name": "stm32",
+            "description": "",
+            "displayName": "",
+            "configurePreset": "stm32-debug"
         }
     ]
 }

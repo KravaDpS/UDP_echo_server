@@ -17,8 +17,10 @@ latex/
 *.code-workspace
 *.sublime-project
 *.sublime-workspace
+*.clangd
 .vs/
 .settings/
+.vscode/
 
 # Лог-файлы и кэши
 *.log
@@ -31,6 +33,11 @@ build/
 out/
 *.makefile
 Makefile.user
+compile_commands.json
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+Makefile
 
 # Средства отладки
 *.gdb
